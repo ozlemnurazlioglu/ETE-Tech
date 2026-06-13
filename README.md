@@ -30,7 +30,7 @@ We created a custom seeding script that automatically populates the remote Supab
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend:** React (v18), TypeScript, Vite, Ant Design (Antd v5), Recharts, Axios, React Router (v6).
 - **Backend:** Node.js, Express, TypeScript, Sequelize, pg (PostgreSQL), jsonwebtoken, bcryptjs, Jest, Supertest.
@@ -39,7 +39,7 @@ We created a custom seeding script that automatically populates the remote Supab
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before running the application, make sure you have:
 1. **Docker & Docker-Compose** installed on your machine.
@@ -47,7 +47,7 @@ Before running the application, make sure you have:
 
 ---
 
-## ⚙️ Configuration (.env Setup)
+## Configuration (.env Setup)
 
 Create a `.env` file in the **root** folder (or rename `.env.example`).
 
@@ -65,7 +65,7 @@ JWT_SECRET=super_secret_jwt_key_ete_tech_123!
 
 ---
 
-## 🐳 Running with Docker (Recommended)
+## Running with Docker (Recommended)
 
 To spin up both the Frontend (Port 3000) and Backend (Port 5000) with a single command:
 
@@ -77,7 +77,7 @@ docker-compose up -d --build
 - **Frontend (UI):** [http://localhost:3000](http://localhost:3000)
 - **Backend (API):** [http://localhost:5000](http://localhost:5000)
 
-### 🌱 Populating Mock Data (Seeding)
+### Populating Mock Data (Seeding)
 To run our automated seeding script inside the backend container and add our standard companies/products and the admin user:
 ```bash
 docker-compose exec backend sh -c "npx ts-node src/seed.ts"
@@ -86,7 +86,7 @@ docker-compose exec backend sh -c "npx ts-node src/seed.ts"
 - **Username:** `admin`
 - **Password:** `admin123`
 
-### 🧪 Executing Tests inside Docker
+### Executing Tests inside Docker
 To run all 23 unit & integration test suites inside the secure container environment:
 ```bash
 docker-compose exec backend npm test
@@ -99,7 +99,7 @@ docker-compose down
 
 ---
 
-## 💻 Running Locally (Manual Mode)
+## Running Locally (Manual Mode)
 
 If you prefer to run services manually on your host machine:
 
@@ -127,7 +127,7 @@ npm run dev
 
 ---
 
-## 📐 Architectural Decisions & Code Quality
+## Architectural Decisions & Code Quality
 
 - **Layered Controller-Route Pattern:** The backend decouples router definitions from the actual controller business logic and sequelize schema structures, aligning with Clean Architecture.
 - **TypeScript Throughout:** Absolute type safety from frontend requests to backend models.
