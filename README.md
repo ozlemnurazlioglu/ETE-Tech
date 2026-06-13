@@ -76,6 +76,7 @@ docker-compose up -d --build
 
 - **Frontend (UI):** [http://localhost:3000](http://localhost:3000)
 - **Backend (API):** [http://localhost:5000](http://localhost:5000)
+- **Vercel Live URL:** [https://ete-tech-frontend.vercel.app](https://ete-tech-frontend.vercel.app)
 
 ### Populating Mock Data (Seeding)
 To run our automated seeding script inside the backend container and add our standard companies/products and the admin user:
