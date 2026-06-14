@@ -43,3 +43,4 @@ database.sqlite
 console-*.log
 page-*.yml
 skills-lock.json
+task.md
