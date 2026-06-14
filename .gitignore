@@ -37,6 +37,8 @@ Thumbs.db
 database.sqlite
 
 # System and Agent-specific files
+.agents/
+.gemini/
 .playwright-mcp/
 console-*.log
 page-*.yml
