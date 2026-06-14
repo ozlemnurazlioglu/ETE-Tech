@@ -53,14 +53,14 @@ Create a `.env` file in the **root** folder (or rename `.env.example`).
 
 ```env
 # Database Configuration (Supabase PostgreSQL Connection Details)
-DB_HOST=aws-1-ap-south-1.pooler.supabase.com
-DB_PORT=6543
+DB_HOST=your_supabase_db_host_here
+DB_PORT=5432
 DB_NAME=postgres
-DB_USER=postgres.ofbjpqxdgbrfkzbatmsq
-DB_PASSWORD=FHg52QftW3NOjOZp
+DB_USER=postgres
+DB_PASSWORD=your_supabase_db_password
 
 # JWT Authentication Configuration
-JWT_SECRET=super_secret_jwt_key_ete_tech_123!
+JWT_SECRET=your_super_secret_jwt_key_here
 ```
 
 ---
